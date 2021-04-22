@@ -14,6 +14,12 @@ AppName.Modules.ThemeModule = (function () {
         prevEl: '.swiper-button-prev',
       },
     });
+
+    var swiperTestimonials = new Swiper('.swiper-testimonials .swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
   };
 
   /////////////////////
