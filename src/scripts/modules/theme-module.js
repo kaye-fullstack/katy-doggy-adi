@@ -8,9 +8,10 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
 
-    const swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
+    var swiperBanner = new Swiper('.swiper-banner .swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   };

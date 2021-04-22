@@ -10,7 +10,7 @@
   .section-banner {
     position: relative;
 
-    padding: 313px 0 150px 0;
+    padding: 313px 90px 150px 0;
     
     text-align: center;
 
@@ -22,8 +22,8 @@
       content:"";
 
       position: absolute;
-      top: 158px;
-      right: 79px;
+      top: 157px;
+      right: 127px;
       z-index: 0;
 
       width: 588px;
@@ -32,6 +32,10 @@
       background-image: url("../assets/images/paws.png");
       background-repeat: no-repeat;
       background-size: contain;
+    }
+
+    .content-wrapper {
+      margin: 0 0 0 91px;
     }
 
     .banner-main-dogs {
@@ -43,7 +47,7 @@
     .banner-paws-left {
       position: absolute;
       top: 400px;
-      left: 30px;
+      left: -17px;
     }
 
     h1 { 
@@ -70,18 +74,50 @@
 
     .banner-dog-lower {
       position: absolute;
-      top: 620px;
-      right: 0;
+      top: 623px;
+      right: 37px;
       z-index: 3;
     }
 
     .swiper-container {
-      width: 1615px;
+      width: 1715px;
+
+      .swiper-button-prev {
+        top: 207px;
+        left: 1609px;
+
+        margin: 0;
+        width: 23px;
+        height: 36px;
+    
+        background-image: url("../assets/images/arrow left.png");
+      }
+
+      .swiper-button-next {
+        top: 131px;
+        right: 5px;
+        
+        margin: 0;
+        width: 23px;
+        height: 36px;
+
+        background-image: url("../assets/images/arrow right.png");
+      }
 
       .swiper-slide {
         margin: 42px 0 0 0;
-        width: 1615px;
+        width: 1715px;
+
+        img {
+          margin: 0 87px 0 0;
+          width: 1676px;
+        }
       }
+    }
+    .swiper-arrows {
+      position: absolute;
+      top: 36.5%;
+      right: 0;
     }
   }
 
