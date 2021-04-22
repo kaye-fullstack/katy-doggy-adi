@@ -194,17 +194,48 @@
     .content-wrapper {
       .content-holder {
         margin: 0 0 22px 208px;
-        height: 259px;
+        padding: 46px 0 0 295px;
+        width: 1170px;
+        height: 260px;
+
+        &:first-child {
+          background-image: url("../assets/images/pet boarding 1.png");
+          background-repeat: no-repeat;
+        }
+
+        &:nth-child(2) {
+          background-image: url("../assets/images/pet grooming 1.png");
+          background-repeat: no-repeat;
+        }
 
         &:nth-child(3) {
-          padding: 0 0 90px 0;
+          background-image: url("../assets/images/doggy day care 1.png");
+          background-repeat: no-repeat;
+        }
+
+        .title {
+          margin: 5px 0 0 0;
+
+          font-size: 35px;
+          font-weight: bold;
+          color: $white;
+        }
+
+        .desc {
+          margin: 10px 0 0 0;
+          width: 700px;
+
+          font-size: 18px;
+          line-height: 32px;
+          color: $white;
         }
 
         .cards-arrow {
           position: absolute;
           right: 0;
+          z-index: 10;
           
-          margin: 46px 307px 0 0;
+          margin: 0 307px 0 0;
         }
       }
     }
