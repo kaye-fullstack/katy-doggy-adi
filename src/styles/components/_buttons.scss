@@ -1,0 +1,59 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-orange{
+  z-index: 10;
+
+  padding: 25px 127px;
+
+  font-size: 33px;
+  color: $white;
+
+  background-color: $orange;
+  border: none;
+  border-radius: 13px;
+}
+
+.btn-orange:hover {
+  background: $bright-orange;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.btn-green{
+  z-index: 10;
+
+  padding: 24px 160px;
+
+  font-size: 33px;
+  color: $white;
+
+  background-color: $light-green;
+  border: none;
+  border-radius: 13px;
+}
+
+.btn-green:hover {
+  background: $green;
+  box-shadow: 10px 10px 5px $brown;
+}
+
+.footer-btn-orange{
+  z-index: 10;
+
+  padding: 15px 88px;
+
+  font-size: 33px;
+  color: $white;
+
+  background-color: $orange;
+  border: none;
+  border-radius: 13px;
+}
+
+.footer-btn-orange:hover {
+  background: $bright-orange;
+  box-shadow: 10px 10px 5px $mid-green;
+}

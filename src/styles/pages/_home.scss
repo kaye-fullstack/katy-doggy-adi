@@ -1,0 +1,397 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  transition: all .2s ease-in-out;
+  
+  .section-banner {
+    position: relative;
+
+    padding: 313px 0 150px 0;
+    
+    text-align: center;
+
+    background-image: url("../assets/images/banner bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+      content:"";
+
+      position: absolute;
+      top: 158px;
+      right: 79px;
+      z-index: 0;
+
+      width: 588px;
+      height: 485px;
+
+      background-image: url("../assets/images/paws.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .banner-main-dogs {
+      position: absolute;
+
+      width: 1435px;
+    }
+
+    .banner-paws-left {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+
+    h1 { 
+      position: absolute;
+      z-index: 1;
+
+      margin: 0 0 0 217px;
+
+      font-size: 56px;
+      letter-spacing: .9px;
+      color: $white;
+    }
+
+    .btn-orange {
+      margin: 20px 0 0 0;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 100px;
+      right: 0;
+      z-index: 100;
+    }
+
+    .banner-dog-lower {
+      position: absolute;
+      top: 620px;
+      right: 0;
+      z-index: 3;
+    }
+
+    .swiper-container {
+      width: 1615px;
+
+      .swiper-slide {
+        margin: 42px 0 0 0;
+        width: 1615px;
+      }
+    }
+  }
+
+  .section-circle-ranch {
+    position: relative;
+
+    background-image: url("../assets/images/sup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content-holder {
+      &:nth-child(1) {
+        padding: 80px 0 0 3px;
+      }
+
+      &:nth-child(2) {
+        margin: 0 0 0 200px;
+      }
+
+      &:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        margin: 186px 0 0 0;
+      }
+    }
+
+    .title {
+      font-size: 37px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: $teal;
+      text-align: center;
+    }
+
+    .desc {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: .4px;
+      line-height: 32px;
+      color: $teal;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin: 32px 0 0 9px;
+        width: 1172px;
+      }
+
+      &:nth-child(2) {
+        margin: 31px 0 0 9px;
+        width: 1164px;
+      }
+
+      &:nth-child(3) {
+        margin: 34px 0 0 9px;
+        width: 1160px;
+      }
+    }
+
+    .closing-note {
+      margin: 26px 0 0 460px;
+
+      font-size: 27px;
+      font-weight: bold;
+      color: $teal;
+    }
+
+    .icon {
+      margin: 0 0 30px 25px;
+    }
+  }
+
+  .section-cards {
+    padding: 87px 0 68px 0;
+
+    background-color: $beige;
+
+    .content-wrapper {
+      .content-holder {
+        margin: 0 0 22px 224px;
+        height: 260px;
+
+        &:nth-child(3) {
+          padding: 0 0 90px 0;
+        }
+
+        .cards-arrow {
+          position: absolute;
+          right: 0;
+          
+          margin: 46px 315px 0 0;
+        }
+      }
+    }
+  }
+
+  .section-submission {
+    background-image: url("../assets/images/4th section bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .content-wrapper {
+      padding: 0 0 282px 405px;
+
+      .content-holder {
+        &:nth-child(1) {
+          margin: 0 0 0 172px;
+        }
+
+        &:nth-child(2) {
+          margin: 0 0 0 65px;
+        }
+
+        &:nth-child(3) {
+          margin: 25px 0 0 0;
+        }
+      }
+    }
+
+    .submission-pug {
+      margin: -78px 0 0 0;
+      width: 450px;
+    }
+
+    .title {
+      margin: 15px 0 16px 162px;
+
+      font-size: 40px;
+      font-weight: bold;
+      color: $white;
+    }
+
+    .sub-title {
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: $white;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+
+      .input-holder {
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(4) {
+          margin: 3px 0 0 180px;
+        }
+      }
+
+      ::placeholder { 
+        font-size: 14px;
+        color: $white;
+      }
+    }
+  }
+
+  .section-dog-month {
+    position: relative;
+
+    background-image: url("../assets/images/5th bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+      content:"";
+
+      position: absolute;
+      top: 90px;
+      right: 0;
+      z-index: 0;
+
+      width: 565px;
+      height: 852px;
+
+      background-image: url("../assets/images/dog champion.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .content-wrapper {
+      padding: 0 0 96px 200px;
+
+      .content-holder {
+        &:nth-child(1) {
+          margin: 0 0 0 89px;
+
+          .dog-month-dog-food {
+            z-index: 0;
+
+            margin: -249px 0 0 0;
+          }
+        }
+
+        &:nth-child(2) {
+          margin: -286px 0 0 245px;
+          
+          .dog-month-paws {
+            z-index: 2;
+
+            width: 670px;
+          }
+
+          .dog-month-center {
+            z-index: 3;
+
+            margin: 23px 0 0 -454px;
+            width: 255px;
+          }
+        }
+
+        &:nth-child(3) {
+          margin: 8px 0 0 0;
+
+          .title {
+            margin: 0 0 0 334px;
+            
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: $white;
+          }
+
+          .desc {
+            margin: 39px 0 0 13px;
+            width: 1150px;
+      
+            font-size: 20px;
+            letter-spacing: .3px;
+            line-height: 31px;
+            color: $white;
+            text-align: center;
+          }
+
+          .closing-note {
+            margin: 38px 0 0 422px;
+            
+            font-size: 41px;
+            letter-spacing: 1.5px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .section-testimonials {
+    position: relative;
+
+    padding: 146px 0 184px 0;
+
+    background-color: $yellow;
+
+    .swiper-container {
+      padding: 170px 0 160px 60px;
+      width: 1245px;
+
+      background-image: url("../assets/images/6th section slide.png");
+      background-repeat: no-repeat;
+      background-size: 1245px;
+
+      .swiper-pagination-bullet {
+        margin: 0 8px 0 8px;
+
+        width: 15px;
+        height: 15px;
+      }
+
+      .swiper-slide {
+        .title {
+          margin: 0 0 0 428px;
+
+          font-size: 30px;
+          font-style: italic;
+          font-weight: bold;
+          color: $teal;
+        }
+
+        .desc{
+          margin: 24px 0 0 44px;
+          width: 1035px;
+
+          font-size: 16px;
+          font-style: italic;
+          font-weight: bold;
+          color: $teal;
+          text-align: center;
+        }
+
+        .testimonials-pic {
+          margin: 30px 0 0 508px;
+        }
+
+        .testimonials-name {
+          margin: 18px 0 0 525px;
+
+          font-size: 22px;
+          font-weight: bold;
+          color: $teal;
+        }
+
+        .testimonials-under-name {
+          margin: 0 0 0 525px;
+
+          font-size: 16px;
+          font-weight: bold;
+          color: $teal;
+        }
+      }
+    }
+  }
+}

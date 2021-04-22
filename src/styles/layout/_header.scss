@@ -1,0 +1,83 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+  position: absolute;
+  z-index: 2;
+
+  margin: 40px 152px 0;
+  width: 95%;
+
+  ul {
+    li {
+      margin: 0 5px 0 31px;
+
+      a {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $white;
+
+        &:hover {
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  header {
+    margin: 42px 16px 0;
+    width: 96%;
+  
+    ul {
+      li {
+        margin: 0 5px 0 22px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  header {
+    margin: 42px 16px 0;
+    width: 95%;
+  
+    ul {
+      li {
+        margin: 0 5px 0 22px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  header {
+    margin: 42px 12px 0;
+    width: 95%;
+  
+    ul {
+      li {
+        margin: 0 5px 0 22px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  header {
+    margin: 42px 0 0;
+    width: 95%;
+  
+    ul {
+      li {
+        margin: 0 5px 0 22px;
+      }
+    }
+  }
+}
