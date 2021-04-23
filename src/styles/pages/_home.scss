@@ -113,9 +113,24 @@
 
     padding: 0;
 
-    background-image: url("../assets/images/sup.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $white;
+
+    &:before {
+      content:"";
+
+      position: absolute;
+      top: -52px;
+      left: -47px;
+      z-index: 0;
+
+      width: 588px;
+      height: 780px;
+
+      background-image: url("../assets/images/side dog.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
 
     .content-holder {
       &:nth-child(1) {
@@ -169,10 +184,14 @@
       &:nth-child(3) {
         display: flex;
         flex-direction: row;
-        margin: 186px 0 0 0;
+        margin: -17px 0 0 0;
 
+        background-image: url("../assets/images/2nd section.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
         .icon {
-          margin: 1px 22px 29px 8px;
+          margin: 202px 22px 29px 8px;
 
           &:nth-child(3) {
             .facilities-text{ 
@@ -203,11 +222,11 @@
           }
 
           &:nth-child(7) {
-            margin: 1px 26px 29px 2px;
+            margin: 202px 26px 29px 2px;
           }
 
           &:nth-child(8) {
-            margin: 1px 5px 29px 3px;
+            margin: 202px 5px 29px 3px;
 
             .facilities-text{
               width: 85px;
@@ -582,13 +601,11 @@
         .swiper-button-prev {
           top: 229px;
           right: 85px;
-          z-index: 100;
         }
   
         .swiper-button-next {
           top: 153px;
           right: 5px;
-          z-index: 100;
         }
   
         .swiper-slide {
@@ -618,8 +635,129 @@
         }
   
         .banner-paw-prints {
-          top: 300px;
+          top: 150px;
           left: 10px;
+        }
+      }
+    }
+
+    .section-circle-ranch {
+      padding: 0;
+
+      &:before {
+        top: -185px;
+        left: 0;
+
+        width: 195px;
+        height: 380px;
+      }
+  
+      .content-holder {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 80px 0 0 0;
+  
+          .title {
+            width: 460px;
+
+            letter-spacing: 0;
+          }
+        }
+  
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+  
+          .desc {      
+            &:nth-child(1) {
+              margin: 32px 0 0 9px;
+              width: 900px;
+            }
+      
+            &:nth-child(2) {
+              margin: 31px 0 0 9px;
+              width: 900px;
+            }
+      
+            &:nth-child(3) {
+              margin: 34px 0 0 9px;
+              width: 900px;
+            }
+          }
+  
+          .closing-note {
+            margin: 26px 0 0 0;
+            width: 275px;
+          }
+        }
+  
+        &:nth-child(3) {
+          display: flex;
+          flex-direction: row;
+          margin: -17px 0 0 0;
+  
+          background-image: url("../assets/images/2nd section.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+      
+          .icon {
+            margin: 202px 0 29px 8px;
+
+            img {
+              width: 112px;
+            }
+  
+            &:nth-child(3) {
+              .facilities-text{ 
+                width: 115px;
+                margin: 15px 0 0 5px;
+              }
+            }
+  
+            &:nth-child(4) {
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(5) {
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(6) {
+              margin: 202px 3px 29px 8px;
+
+              .facilities-text{ 
+                width: 122px;
+                margin: 15px 0 0 -2px;
+              }
+            }
+  
+            &:nth-child(7) {
+              margin: 202px 3px 29px 2px;
+            }
+  
+            &:nth-child(8) {
+              margin: 202px 5px 29px 3px;
+  
+              .facilities-text{
+                width: 85px;
+                margin: 15px 0 0 37px;
+              }
+            }
+          }
+  
+          .facilities-text {
+            margin: 15px 0 0 2px;
+  
+            font-size: 17px;
+          }
         }
       }
     }
@@ -671,6 +809,7 @@
         }
       }
     }
+    
 
     .section-testimonials {   
       .swiper-testimonials {
@@ -724,6 +863,71 @@
 
 @include respond-to(md) {
   .home {
+    .section-banner {
+      padding: 313px 0 60px 0;
+      
+      &:before {
+        top: 87px;
+        right: 15px;
+
+        width: 400px;
+        height: 330px;  
+      }
+  
+      h1 {   
+        margin: -110px 20px;
+        width: 95%;
+
+        font-size: 40px;
+      }
+  
+      .swiper-container {
+        width: 760px;
+        height: 280px;
+  
+        .swiper-button-prev {
+          top: 229px;
+          right: 85px;
+        }
+  
+        .swiper-button-next {
+          top: 153px;
+          right: 5px;
+        }
+  
+        .swiper-slide {
+          margin: 0;
+          width: 760px;
+  
+          img {
+            width: 760px;
+          }
+        }
+      }
+  
+      .swiper-arrows {
+        top: 360px;
+        z-index: 2;
+      }
+  
+      .content-wrapper {
+        margin: 0;
+  
+        .btn-orange {
+          margin: 20px 0 0 0;
+        }
+  
+        .banner-golden-dog {
+          display: none;
+        }
+  
+        .banner-paw-prints {
+          top: 150px;
+          left: 10px;
+        }
+      }
+    }
+
     .section-cards {
       .content-wrapper {
         .content-holder {
@@ -798,6 +1002,71 @@
 
 @include respond-to(sm) {
   .home {
+    .section-banner {
+      padding: 313px 0 60px 0;
+      
+      &:before {
+        top: 87px;
+        right: 15px;
+
+        width: 400px;
+        height: 330px;  
+      }
+  
+      h1 {   
+        margin: -110px 20px;
+        width: 95%;
+
+        font-size: 30px;
+      }
+  
+      .swiper-container {
+        width: 570px;
+        height: 280px;
+  
+        .swiper-button-prev {
+          top: 229px;
+          right: 85px;
+        }
+  
+        .swiper-button-next {
+          top: 153px;
+          right: 5px;
+        }
+  
+        .swiper-slide {
+          margin: 0;
+          width: 570px;
+  
+          img {
+            width: 570px;
+          }
+        }
+      }
+  
+      .swiper-arrows {
+        top: 360px;
+        z-index: 2;
+      }
+  
+      .content-wrapper {
+        margin: 0;
+  
+        .btn-orange {
+          margin: 20px 0 0 0;
+        }
+  
+        .banner-golden-dog {
+          display: none;
+        }
+  
+        .banner-paw-prints {
+          top: 150px;
+          left: 10px;
+        }
+      }
+    }
+
     .section-cards {
       .content-wrapper {
         .content-holder {
@@ -894,6 +1163,74 @@
 
 @include respond-to(xs) {
   .home {
+    .section-banner {
+      padding: 313px 0 60px 0;
+      
+      &:before {
+        top: 130px;
+        right: 15px;
+
+        width: 200px;
+        height: 170px;
+      }
+  
+      h1 {   
+        margin: -110px 20px;
+        width: 95%;
+
+        font-size: 30px;
+      }
+  
+      .swiper-container {
+        width: 310px;
+        height: 280px;
+  
+        .swiper-button-prev {
+          top: 229px;
+          right: 85px;
+        }
+  
+        .swiper-button-next {
+          top: 153px;
+          right: 5px;
+        }
+  
+        .swiper-slide {
+          margin: 0;
+          width: 310px;
+  
+          img {
+            width: 310px;
+          }
+        }
+      }
+  
+      .swiper-arrows {
+        top: 360px;
+        z-index: 2;
+      }
+  
+      .content-wrapper {
+        margin: 0;
+  
+        .btn-orange {
+          margin: 20px 0 0 0;
+          padding: 18px 90px;
+
+          font-size: 18px;
+        }
+  
+        .banner-golden-dog {
+          display: none;
+        }
+  
+        .banner-paw-prints {
+          top: 150px;
+          left: 10px;
+        }
+      }
+    }
+
     .section-cards {
       padding: 55px 0 68px 0;
 
