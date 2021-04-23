@@ -24,7 +24,6 @@
 
 }
 
-
 .text-area {
   margin: 0 0 31px 0;
   width: 830px;
@@ -34,4 +33,32 @@
 
   background-color: transparent;
   border-radius: 12px;
+}
+
+@include respond-to(md) {
+  .text-area {
+    width: 700px;
+  }
+}
+
+@include respond-to(sm) {
+  .form-control {
+    margin: 0 0 12px 0;
+    width: 500px;
+  }
+
+  .text-area {
+    width: 500px;
+  }
+}
+
+@include respond-to(xs) {
+  .form-control {
+    margin: 0 0 12px 0;
+    width: 300px;
+  }
+  
+  .text-area {
+    width: 300px;
+  }
 }

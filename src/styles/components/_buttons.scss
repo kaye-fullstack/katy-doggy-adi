@@ -57,3 +57,19 @@
   background: $bright-orange;
   box-shadow: 10px 10px 5px $mid-green;
 }
+
+@include respond-to(sm) {
+  .btn-green{
+    padding: 20px 120px;
+  
+    font-size: 28px;
+  }
+}
+
+@include respond-to(xs) {
+  .btn-green{
+    padding: 20px 100px;
+  
+    font-size: 28px;
+  }
+}
