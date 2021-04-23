@@ -17,15 +17,11 @@
   &:focus {
     background: transparent;
   }
-  
-  &:active {
-    background: transparent;
-  }
-
 }
 
 .text-area {
   margin: 0 0 31px 0;
+  padding: 15px 0 0 22px;
   width: 830px;
   height: 130px;
   

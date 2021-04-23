@@ -15,11 +15,18 @@
   background-color: $orange;
   border: none;
   border-radius: 13px;
-}
 
-.btn-orange:hover {
-  background: $bright-orange;
-  box-shadow: 10px 10px 5px grey;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: $bright-orange;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn-green{
@@ -33,29 +40,14 @@
   background-color: $light-green;
   border: none;
   border-radius: 13px;
-}
 
-.btn-green:hover {
-  background: $green;
-  box-shadow: 10px 10px 5px $brown;
-}
+  cursor: pointer;
+  transition: 0.3s;
 
-.footer-btn-orange{
-  z-index: 10;
-
-  padding: 15px 97px;
-
-  font-size: 33px;
-  color: $white;
-
-  background-color: $orange;
-  border: none;
-  border-radius: 13px;
-}
-
-.footer-btn-orange:hover {
-  background: $bright-orange;
-  box-shadow: 10px 10px 5px $mid-green;
+  &:hover {
+    background: $green;
+    box-shadow: 10px 10px 5px $brown;
+  }
 }
 
 @include respond-to(sm) {
