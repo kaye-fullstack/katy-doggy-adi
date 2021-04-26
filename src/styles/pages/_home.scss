@@ -131,7 +131,6 @@
       background-size: contain;
     }
 
-
     .content-holder {
       &:nth-child(1) {
         padding: 80px 0 0 3px;
@@ -184,7 +183,9 @@
       &:nth-child(3) {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         margin: -17px 0 0 0;
+        width: 100%;
 
         background-image: url("../assets/images/2nd section.png");
         background-repeat: no-repeat;
@@ -348,6 +349,7 @@
           flex-direction: column;
           align-items: center;
         }
+        
         &:nth-child(3) {
           margin: 8px 0 0 0;
           width: 830px;
@@ -435,18 +437,12 @@
 
         &:nth-child(2) {
           margin: -286px 0 0 247px;
-          
-          .dog-month-paws {
-            z-index: 2;
-
-            width: 665px;
-          }
 
           .dog-month-center {
             z-index: 3;
 
-            margin: 22px 0 0 -452px;
-            width: 255px;
+            margin: 3px 0 0 3px;
+            width: 660px;
           }
         }
 
@@ -455,6 +451,7 @@
 
           .title {
             margin: 0 0 0 334px;
+            width: 525px;
             
             font-size: 60px;
             font-weight: bold;
@@ -475,6 +472,7 @@
 
           .closing-note {
             margin: 38px 0 0 422px;
+            width: 345px;
             
             font-size: 41px;
             font-weight: bold;
@@ -502,10 +500,6 @@
       width: 1340px;
       height: 877px;
 
-      .testimonial-circle {
-        margin: -47px 0 0 528px;
-      }
-
       .swiper-slide {
         padding: 0 0 0 20px;
         width: 1285px;
@@ -513,6 +507,10 @@
         background-image: url("../assets/images/6th section slide.png");
         background-repeat: no-repeat;
         background-size: 1280px;
+
+        .testimonial-circle {
+          margin: -47px 0 0 528px;
+        }
       }
 
       .swiper-pagination-bullet {
@@ -571,6 +569,16 @@
         color: $teal;
       }
     }
+  }
+
+  .dotted-scrollspy {
+    position: fixed;
+    top: 300px;
+    right: 300px;
+    z-index: 30;
+
+    width: 200px;
+    height: 500px;
   }
 }
 
@@ -642,8 +650,6 @@
     }
 
     .section-circle-ranch {
-      padding: 0;
-
       &:before {
         top: -185px;
         left: 0;
@@ -673,20 +679,7 @@
           margin: 0;
   
           .desc {      
-            &:nth-child(1) {
-              margin: 32px 0 0 9px;
-              width: 900px;
-            }
-      
-            &:nth-child(2) {
-              margin: 31px 0 0 9px;
-              width: 900px;
-            }
-      
-            &:nth-child(3) {
-              margin: 34px 0 0 9px;
-              width: 900px;
-            }
+            width: 900px !important;
           }
   
           .closing-note {
@@ -696,16 +689,11 @@
         }
   
         &:nth-child(3) {
-          display: flex;
-          flex-direction: row;
-          margin: -17px 0 0 0;
-  
-          background-image: url("../assets/images/2nd section.png");
-          background-repeat: no-repeat;
-          background-size: cover;
+          padding: 0 0 0 10px;
       
           .icon {
-            margin: 202px 0 29px 8px;
+            margin: 202px 0 29px 0;
+            width: 12.5%;
 
             img {
               width: 112px;
@@ -731,30 +719,28 @@
             }
   
             &:nth-child(6) {
-              margin: 202px 3px 29px 8px;
-
               .facilities-text{ 
                 width: 122px;
-                margin: 15px 0 0 -2px;
               }
             }
-  
+
             &:nth-child(7) {
-              margin: 202px 3px 29px 2px;
+              margin: 202px 0 29px 0;
             }
   
             &:nth-child(8) {
-              margin: 202px 5px 29px 3px;
-  
+              margin: 202px 0 29px 0;
+
               .facilities-text{
                 width: 85px;
-                margin: 15px 0 0 37px;
+                margin: 15px 0 0 15px;
               }
             }
           }
   
           .facilities-text {
-            margin: 15px 0 0 2px;
+            margin: 15px 0 0 0;
+            width: 120px;
   
             font-size: 17px;
           }
@@ -809,8 +795,72 @@
         }
       }
     }
-    
 
+    .section-submission {
+      .content-wrapper {
+        .content-holder {
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 865px;
+          }
+        }
+      }
+    }
+
+    .section-dog-month {
+      &:before {
+        top: 128px;
+        right: 15px;
+
+        width: 258px;
+        height: 395px;
+      }
+  
+      .content-wrapper {
+        padding: 0 0 96px 0;
+  
+        .content-holder {
+          &:nth-child(1) {
+            display: flex;
+            margin: 0;
+  
+            .dog-month-dog-food {
+              margin: -185px auto 0;
+              width: 700px;
+            }
+          }
+  
+          &:nth-child(2) {
+            display: flex;
+            width: 100%;
+            margin: -195px 0 0 0;
+  
+            .dog-month-center {
+              margin: 3px auto 0;
+            }
+          }
+  
+          &:nth-child(3) {
+            margin: 8px 0 0 0;
+  
+            .title {
+              margin: 0 auto;
+            }
+  
+            .desc {
+              margin: 39px auto 0;
+              width: 900px;
+            }
+  
+            .closing-note {
+              margin: 38px auto 0;
+            }
+          }
+        }
+      }
+    }
+    
     .section-testimonials {   
       .swiper-testimonials {
         margin: 0 !important;
@@ -821,15 +871,15 @@
         width: 970px;
         height: 760px;
   
-        .testimonial-circle {
-          margin: -70px 0 0 40%;
-        }
-  
         .swiper-slide {
           padding: 0;
           width: 970px;
 
           background-size: 970px;
+
+          .testimonial-circle {
+            margin: -70px 0 0 40%;
+          }
         }
       }
   
@@ -854,7 +904,6 @@
   
         .testimonials-name {
           margin: 7px 0 -1px 0;
-          width: 100px;
         }
       }
     }
@@ -928,6 +977,106 @@
       }
     }
 
+    .section-circle-ranch {
+      &:before {
+        top: -185px;
+        left: 0;
+
+        width: 195px;
+        height: 380px;
+      }
+  
+      .content-holder {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 80px 0 0 0;
+  
+          .title {
+            width: 460px;
+
+            letter-spacing: 0;
+          }
+        }
+  
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+  
+          .desc {    
+            width: 750px !important;
+          }
+  
+          .closing-note {
+            margin: 26px 0 0 0;
+            width: 275px;
+          }
+        }
+  
+        &:nth-child(3) {
+          flex-wrap: wrap;
+          padding: 0 0 20px 0;
+      
+          .icon {
+            margin: 202px 0 29px 0;
+            width: 25%;
+            padding: 0 0 0 7%;
+
+            img {
+              width: 112px;
+            }
+  
+            &:nth-child(3) {
+              .facilities-text{ 
+                margin: 15px 0 0 5px;
+              }
+            }
+  
+            &:nth-child(4) {
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(5) {
+              margin: 0;
+
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(6) {
+              margin: 0;
+            }
+  
+            &:nth-child(7) {
+              margin: 0;
+            }
+  
+            &:nth-child(8) {
+              margin: 0;
+  
+              .facilities-text{
+                width: 85px;
+                margin: 15px 0 0 15px;
+              }
+            }
+          }
+  
+          .facilities-text {
+            margin: 15px 0 0 0 !important;
+            width: 115px !important;
+  
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
     .section-cards {
       .content-wrapper {
         .content-holder {
@@ -994,6 +1143,107 @@
               }
             }
           }
+        }
+      }
+    }
+
+    .section-dog-month {
+      &:before {
+        display: none;
+      }
+  
+      .content-wrapper {
+        padding: 0 0 96px 0;
+  
+        .content-holder {
+          &:nth-child(1) {
+            display: flex;
+            margin: 0;
+  
+            .dog-month-dog-food {
+              margin: -185px auto 0;
+              width: 700px;
+            }
+          }
+  
+          &:nth-child(2) {
+            display: flex;
+            width: 100%;
+            margin: -195px 0 0 0;
+  
+            .dog-month-center {
+              margin: 3px auto 0;
+            }
+          }
+  
+          &:nth-child(3) {
+            margin: 8px 0 0 0;
+  
+            .title {
+              margin: 0 auto;
+            }
+  
+            .desc {
+              margin: 39px auto 0;
+              width: 700px;
+            }
+  
+            .closing-note {
+              margin: 38px auto 0;
+            }
+          }
+        }
+      }
+    }
+
+    .section-testimonials {   
+      .swiper-testimonials {
+        margin: 0 !important;
+      }
+
+      .swiper-container {
+        padding: 107px 0 0 0;
+        width: 740px;
+        height: 760px;
+  
+        .swiper-slide {
+          margin: 0 10px 0 0;
+          padding: 0;
+          width: 730px !important;
+          height: 450px;
+
+          background-color: #f4e3b5;
+          background-image: none;
+          border-radius: 20px;
+          box-shadow: 10px 12px 5px $mid-green;
+
+          .testimonial-circle {
+            margin: -70px 0 0 40%;
+          }
+        }
+      }
+  
+      .title {
+        margin: -46px auto 0;
+        width: 300px;
+
+        font-size: 30px;
+      }
+  
+      .desc{
+        margin: 10px auto 0;
+        width: 700px;
+      }
+  
+      .testimonials-profile {
+        margin: 20px 0 0 0;
+  
+        .testimonials-pic {
+          width: 95px;
+        }
+  
+        .testimonials-name {
+          margin: 7px 0 -1px 0;
         }
       }
     }
@@ -1067,6 +1317,102 @@
       }
     }
 
+    .section-circle-ranch {
+      &:before {
+        display: none;
+      }
+  
+      .content-holder {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 0 0 0;
+  
+          .title {
+            width: 460px;
+
+            letter-spacing: 0;
+          }
+        }
+  
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+  
+          .desc {    
+            width: 550px!important;
+          }
+  
+          .closing-note {
+            margin: 26px 0 0 0;
+            width: 275px;
+          }
+        }
+  
+        &:nth-child(3) {
+          flex-wrap: wrap;
+          padding: 0 0 20px 0;
+      
+          .icon {
+            margin: 202px 0 29px 0;
+            width: 22%;
+            padding: 0 0 0 2%;
+
+            img {
+              width: 112px;
+            }
+  
+            &:nth-child(3) {
+              .facilities-text{ 
+                margin: 15px 0 0 5px;
+              }
+            }
+  
+            &:nth-child(4) {
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(5) {
+              margin: 0;
+
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(6) {
+              margin: 0;
+            }
+  
+            &:nth-child(7) {
+              margin: 0;
+            }
+  
+            &:nth-child(8) {
+              margin: 0;
+  
+              .facilities-text{
+                width: 85px;
+                margin: 15px 0 0 15px;
+              }
+            }
+          }
+  
+          .facilities-text {
+            margin: 15px 0 0 0 !important;
+            width: 115px !important;
+  
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
     .section-cards {
       .content-wrapper {
         .content-holder {
@@ -1093,14 +1439,14 @@
               margin: 0 0 0 10px;
             }
           }
+          
+          .dog-icons {
+            margin: 0 auto !important;
 
-          .icon {
-            margin: 0 auto;
             .dog-icon {
               width: 160px;
             }           
           }
-
 
           .cards-arrow {   
             top: 81%;
@@ -1155,6 +1501,107 @@
             margin: 6px 38px 0 0;
             width: 350px;
           }
+        }
+      }
+    }
+
+    .section-dog-month {
+      &:before {
+        display: none;
+      }
+  
+      .content-wrapper {
+        padding: 0 0 96px 0;
+  
+        .content-holder {
+          &:nth-child(1) {
+            display: flex;
+            margin: 0;
+  
+            .dog-month-dog-food {
+              margin: -110px auto 0;
+              width: 500px;
+            }
+          }
+  
+          &:nth-child(2) {
+            display: flex;
+            width: 100%;
+            margin: -195px 0 0 0;
+  
+            .dog-month-center {
+              margin: 30px auto 0;
+              width: 550px;
+            }
+          }
+  
+          &:nth-child(3) {
+            margin: 8px 0 0 0;
+  
+            .title {
+              margin: 0 auto;
+            }
+  
+            .desc {
+              margin: 39px auto 0;
+              width: 550px;
+            }
+  
+            .closing-note {
+              margin: 38px auto 0;
+            }
+          }
+        }
+      }
+    }
+
+    .section-testimonials {   
+      .swiper-testimonials {
+        margin: 0 !important;
+      }
+
+      .swiper-container {
+        padding: 107px 0 0 0;
+        width: 550px;
+        height: 760px;
+  
+        .swiper-slide {
+          margin: 0 10px 0 0;
+          width: 540px !important;
+          height: 500px;
+
+          background-color: #f4e3b5;
+          background-image: none;
+          border-radius: 20px;
+          box-shadow: 10px 12px 5px $mid-green;
+
+          .testimonial-circle {
+            margin: -70px 0 0 35%;
+          }
+        }
+      }
+  
+      .title {
+        margin: -15px auto 0;
+        width: 300px;
+
+        font-size: 30px;
+      }
+  
+      .desc{
+        margin: 10px 0 0 0;
+        width: 500px;
+      }
+  
+      .testimonials-profile {
+        margin: 20px 0 0 0;
+  
+        .testimonials-pic {
+          width: 95px;
+        }
+  
+        .testimonials-name {
+          margin: 7px 0 -1px 0;
         }
       }
     }
@@ -1231,6 +1678,110 @@
       }
     }
 
+    .section-circle-ranch {
+      &:before {
+        display: none;
+      }
+  
+      .content-holder {
+        &:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 0 0 0;
+  
+          .title {
+            width: 300px;
+
+            font-size: 33px;
+            letter-spacing: 0;
+          }
+        }
+  
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          padding: 0 0 50px 0;
+  
+          .desc {    
+            margin: 25px 0 0 0 !important;
+            width: 300px!important;
+          }
+  
+          .closing-note {
+            margin: 26px 0 0 0;
+            width: 275px;
+          }
+        }
+  
+        &:nth-child(3) {
+          align-items: flex-start;
+          flex-wrap: wrap;
+          padding: 0 0 20px 0;
+
+          background:linear-gradient(90deg, #0a7879 0%, #1da088 100% );
+      
+          .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 10px 28px 10px;
+            width: 34%;
+
+            img {
+              width: 112px;
+            }
+  
+            &:nth-child(3) {
+              .facilities-text{ 
+                margin: 15px 0 0 5px;
+              }
+            }
+  
+            &:nth-child(4) {
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(5) {
+              margin: 20px 10px 28px 10px;
+
+              .facilities-text{ 
+                margin: 15px 0 0 22px;
+              }
+            }
+  
+            &:nth-child(6) {
+              margin: 20px 10px 28px 10px;
+            }
+  
+            &:nth-child(7) {
+              margin: 20px 10px 28px 10px;
+            }
+  
+            &:nth-child(8) {
+              margin: 20px 10px 28px 10px;
+
+              .facilities-text{
+                width: 85px;
+                margin: 15px 0 0 15px;
+              }
+            }
+          }
+  
+          .facilities-text {
+            margin: 15px 0 0 0 !important;
+            width: 115px !important;
+  
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
     .section-cards {
       padding: 55px 0 68px 0;
 
@@ -1258,19 +1809,16 @@
             .text-and-arrow {
               margin: 0 0 0 10px;
             }
+            
           }
 
-          .form-group {
-            margin: 0 auto;
-          }
+          .dog-icons {
+            margin: 0 auto !important;
 
-          .icon {
-            margin: 0 auto;
             .dog-icon {
-              width: 160px;
+              width: 120px;
             }           
           }
-
 
           .cards-arrow {   
             top: 86%;
@@ -1335,6 +1883,115 @@
 
             font-size: 36px;
           }
+        }
+      }
+    }
+
+    .section-dog-month {
+      &:before {
+        display: none;
+      }
+  
+      .content-wrapper {
+        padding: 0 0 96px 0;
+  
+        .content-holder {
+          &:nth-child(1) {
+            display: flex;
+            margin: 0;
+  
+            .dog-month-dog-food {
+              margin: -65px auto 0;
+              width: 320px;
+            }
+          }
+  
+          &:nth-child(2) {
+            display: flex;
+            width: 100%;
+            margin: -195px 0 0 0;
+  
+            .dog-month-center {
+              margin: 100px auto 0;
+              width: 300px;
+            }
+          }
+  
+          &:nth-child(3) {
+            margin: 8px 0 0 0;
+  
+            .title {
+              margin: 0 auto;
+              width: 290px;
+
+              font-size: 35px;
+              letter-spacing: normal;
+            }
+  
+            .desc {
+              margin: 25px auto 0;
+              width: 300px;
+            }
+  
+            .closing-note {
+              margin: 38px auto 0;
+              width: 300px;
+
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-testimonials {   
+      .swiper-testimonials {
+        margin: 0 !important;
+      }
+
+      .swiper-container {
+        padding: 65px 0 0 0;
+        width: 300px;
+        height: 820px;
+  
+        .swiper-slide {
+          margin: 0 10px 0 0;
+          padding: 0 0 0 10px;
+          width: 290px !important;
+          height: 650px;
+
+          background-color: #f4e3b5;
+          background-image: none;
+          border-radius: 20px;
+          box-shadow: 10px 12px 5px $mid-green;
+
+          .testimonial-circle {
+            margin: -70px 0 0 18%;
+          }
+        }
+      }
+  
+      .title {
+        margin: -15px auto 0;
+        width: 300px;
+
+        font-size: 27px;
+      }
+  
+      .desc{
+        margin: 10px 0 0 0;
+        width: 270px;
+      }
+  
+      .testimonials-profile {
+        margin: 20px 0 0 0;
+  
+        .testimonials-pic {
+          width: 95px;
+        }
+  
+        .testimonials-name {
+          margin: 7px 0 -1px 0;
         }
       }
     }

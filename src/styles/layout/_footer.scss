@@ -5,7 +5,7 @@
 // -----------------------------------------------------------------------------
 
 footer {
-  background-image: url("../assets/images/footer.png");
+  background-image: url("../assets/images/footer 1.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -191,6 +191,8 @@ footer {
 
 @include respond-to(lg) {
   footer {
+    background-image: url("../assets/images/footer.png");
+
     .content-wrapper {
       &:first-child {
         .content-holder { 
@@ -201,8 +203,11 @@ footer {
       }
   
       &:nth-child(2) {  
+        margin: 0;
+        width: 97%;
+
         .content-holder {
-          &:nth-child(1) {
+          &:first-child {
             margin: 268px 0 0 0;
             width: 25%;
           }
@@ -224,6 +229,8 @@ footer {
 
 @include respond-to(md) {
   footer {
+    background-image: url("../assets/images/footer.png");
+
     .content-wrapper {
       &:first-child {
         .content-holder { 
@@ -234,6 +241,9 @@ footer {
       }
   
       &:nth-child(2) {  
+        margin: 0;
+        width: 96%;
+
         .content-holder {
           &:nth-child(1) {
             margin: 268px 0 0 0;
@@ -257,7 +267,9 @@ footer {
 
 @include respond-to(sm) {
   footer {
-    margin: -22px 0 0 0;
+    margin: -23px 0 0 0;
+
+    background-image: url("../assets/images/footer.png");
 
     .content-wrapper {
       &:first-child {
@@ -274,6 +286,7 @@ footer {
       &:nth-child(2) {  
         flex-direction: column;
         justify-content: flex-start;
+        width: 95%;
         height: 1050px;
 
         .content-holder {
@@ -320,6 +333,8 @@ footer {
   footer {
     margin: -22px 0 0 0;
 
+    background-image: url("../assets/images/footer.png");
+
     .content-wrapper {
       &:first-child {
         .content-holder { 
@@ -328,15 +343,16 @@ footer {
           .title {
             width: 300px;
 
+            font-size: 22px;
             text-align: center;
           }
 
           .desc {
             margin: 0 auto 10px;
-            width: 260px;
+            width: 300px;
           }
 
-          .footer-btn-orange {
+          .btn-orange {
             margin: 0 auto 20px;
             padding: 12px 45px;
 
@@ -348,7 +364,9 @@ footer {
       &:nth-child(2) {  
         flex-direction: column;
         justify-content: flex-start;
-        height: 1000px;
+        margin: 0 0 0 18px;
+        width: 90%;
+        height: 870px;
 
         .content-holder {
           &:nth-child(1) {
