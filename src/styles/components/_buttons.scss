@@ -4,32 +4,65 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.btn-orange{
-  z-index: 10;
+.sidebar {background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%)}
+.sidebar {
+  position: fixed;
+  top: 458px;
+  right: -111px;
+  z-index: 100;
 
-  padding: 25px 127px;
+  width: 288px;
+  height: 90px;
 
-  font-size: 33px;
   color: $white;
-
-  background-color: $orange;
+  font-weight: bold;
+  font-size: 25px;
+  
   border: none;
-  border-radius: 13px;
+  border-radius: 20px;
+
+  transform: rotate(90deg);
 
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    background: $bright-orange;
-    box-shadow: 10px 10px 5px grey;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
+ }
 
-  &:focus {
+
+.btn-orange {background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%)}
+.btn-orange {
+  z-index: 10;
+
+  padding: 25px 127px;
+  text-align: center;
+
+  font-size: 33px;
+  color: $white;
+
+  background-size: 200% auto;          
+  box-shadow: 0 0 20px #eee;
+  border: none;
+  border-radius: 13px;
+  display: block;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
     outline: none;
   }
-}
-
-.btn-green{
+ }
+ 
+ .btn-green {background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%)}
+ .btn-green {
   z-index: 10;
 
   padding: 25px 161px;
@@ -37,18 +70,20 @@
   font-size: 33px;
   color: $white;
 
-  background-color: $light-green;
+  background-size: 200% auto;           
+  box-shadow: 0 0 10px $green;
   border: none;
-  border-radius: 13px;
+  border-radius: 10px;
 
   cursor: pointer;
   transition: 0.3s;
 
-  &:hover {
-    background: $green;
-    box-shadow: 10px 10px 5px $brown;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
   }
-}
 
 @include respond-to(sm) {
   .btn-green{
