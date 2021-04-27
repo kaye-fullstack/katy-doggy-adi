@@ -16,6 +16,9 @@
     width: 20px;
     height: 300px;
 
+    cursor: pointer;
+    transition: 0.3s;
+
     .nav-item {
       &:nth-child(odd) {
         margin: 0 0 10px 0;
@@ -84,6 +87,13 @@
     .swiper-container {
       width: 1715px;
 
+      .swiper-arrows {
+        position: absolute;
+        top: 12%;
+        right: -74px;
+        z-index: 2;
+      }
+
       .swiper-button-prev {
         top: 229px;
         right: 85px;
@@ -109,17 +119,11 @@
       }
     }
 
-    .swiper-arrows {
-      position: absolute;
-      top: 36.5%;
-      right: 0;
-    }
+
 
     .content-wrapper {
-      margin: 0 0 0 625px;
-
       .btn-orange {
-        margin: 20px 0 0 0;
+        margin: 20px 0 0 628px;
       }
 
       .banner-golden-dog {
@@ -624,16 +628,21 @@
   
       .swiper-container {
         width: 992px;
-        height: 280px;
-  
+        height: 360px;
+
+        .swiper-arrows {
+          top: 100px;
+          right: 0;
+        }  
+        
         .swiper-button-prev {
-          top: 229px;
-          right: 85px;
+          top: 278px;
+          right: 155px;
         }
-  
+
         .swiper-button-next {
-          top: 153px;
-          right: 5px;
+          top: 203px;
+          right: 75px;
         }
   
         .swiper-slide {
@@ -646,10 +655,7 @@
         }
       }
   
-      .swiper-arrows {
-        top: 400px;
-        z-index: 2;
-      }
+
   
       .content-wrapper {
         margin: 0;
@@ -846,7 +852,7 @@
             margin: 0;
   
             .dog-month-dog-food {
-              margin: -255px auto 0;
+              margin: -210px auto 0;
               width: 500px;
             }
           }
@@ -954,14 +960,19 @@
         width: 760px;
         height: 280px;
   
+        .swiper-arrows {
+          top: 21%;
+          right: -30px;
+        }
+
         .swiper-button-prev {
-          top: 229px;
-          right: 85px;
+          top: 235px;
+          right: 125px;
         }
   
         .swiper-button-next {
-          top: 153px;
-          right: 5px;
+          top: 162px;
+          right: 44px;
         }
   
         .swiper-slide {
@@ -972,11 +983,6 @@
             width: 760px;
           }
         }
-      }
-  
-      .swiper-arrows {
-        top: 360px;
-        z-index: 2;
       }
   
       .content-wrapper {
@@ -1293,15 +1299,20 @@
       .swiper-container {
         width: 570px;
         height: 280px;
+
+        .swiper-arrows {
+          top: 18%;
+          right: 26%;
+        }
   
         .swiper-button-prev {
           top: 229px;
-          right: 85px;
+          right: 53%;
         }
   
         .swiper-button-next {
           top: 153px;
-          right: 5px;
+          right: 39%;
         }
   
         .swiper-slide {
@@ -1312,11 +1323,6 @@
             width: 570px;
           }
         }
-      }
-  
-      .swiper-arrows {
-        top: 360px;
-        z-index: 2;
       }
   
       .content-wrapper {
@@ -1651,15 +1657,20 @@
       .swiper-container {
         width: 310px;
         height: 280px;
+
+        .swiper-arrows {
+          top: 12%;
+          right: 20px;
+        }
   
         .swiper-button-prev {
-          top: 229px;
-          right: 85px;
+          top: 210px;
+          right: 177px;
         }
   
         .swiper-button-next {
-          top: 153px;
-          right: 5px;
+          top: 138px;
+          right: 95px;
         }
   
         .swiper-slide {
@@ -1670,11 +1681,6 @@
             width: 310px;
           }
         }
-      }
-  
-      .swiper-arrows {
-        top: 360px;
-        z-index: 2;
       }
   
       .content-wrapper {

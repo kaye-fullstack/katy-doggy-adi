@@ -4,15 +4,17 @@
 // This file contains all styles related to the input component.
 // -----------------------------------------------------------------------------
 
-.form-control {
-  margin: 0 30px 20px 0;
-  width: 400px;
-  height: 62px;
-
+.form-control, .text-area {
   color: $white;
 
   background-color: transparent;
   border-radius: 12px;
+}
+
+.form-control {
+  margin: 0 30px 20px 0;
+  width: 400px;
+  height: 62px;
 
   &:focus {
     background: transparent;
@@ -24,11 +26,6 @@
   padding: 15px 0 0 22px;
   width: 830px;
   height: 130px;
-  
-  color: $white;
-
-  background-color: transparent;
-  border-radius: 12px;
 }
 
 @include respond-to(md) {
@@ -39,11 +36,13 @@
 
 @include respond-to(sm) {
   .form-control {
-    margin: 0 0 12px 0;
+    margin: 0 0 5px 0;
     width: 500px;
+    height: 150px;
   }
 
   .text-area {
+    margin: 20px 0 31px 0;
     width: 500px;
   }
 }
